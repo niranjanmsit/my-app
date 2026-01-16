@@ -4,12 +4,9 @@ from langchain.agents import create_agent
 import os
 import requests
 import json
+from dotenv import load_dotenv
 
-
-if "OPENAI_API_KEY" not in os.environ:
-    import getpass
-    os.environ["OPENAI_API_KEY"] = "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";
-
+load_dotenv()
 
 def get_weather(city: str) -> str:
     """Get weather for a given city."""
