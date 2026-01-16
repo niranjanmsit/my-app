@@ -1,0 +1,10 @@
+[project]
+name = "my-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "evaluate>=0.4.6",
+    "flask>=3.1.2",
+]
